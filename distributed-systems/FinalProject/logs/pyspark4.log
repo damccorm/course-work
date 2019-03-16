@@ -1,0 +1,35 @@
+2018-04-27 17:26:22 WARN  NativeCodeLoader:62 - Unable to load native-hadoop library for your platform... using builtin-java classes where applicable
+Setting default log level to "WARN".
+To adjust logging level use sc.setLogLevel(newLevel). For SparkR, use setLogLevel(newLevel).
+Iterations: 1 Regularization parameter: 0.01 MSE: 4.54798740671
+Took 67.9353129864 seconds
+Iterations: 1 Regularization parameter: 0.1 MSE: 12.3197726151
+Took 54.2182750702 seconds
+Iterations: 1 Regularization parameter: 1.0 MSE: 14.2735634673
+Took 52.9962010384 seconds
+Iterations: 1 Regularization parameter: 10.0 MSE: 14.2907488063
+Took 53.1375279427 seconds
+Iterations: 5 Regularization parameter: 0.01 MSE: 0.202747648154
+Took 57.0507380962 seconds
+Iterations: 5 Regularization parameter: 0.1 MSE: 0.165808553338
+Took 57.3544249535 seconds
+Iterations: 5 Regularization parameter: 1.0 MSE: 1.61637432737
+Took 56.8115348816 seconds
+Iterations: 5 Regularization parameter: 10.0 MSE: 14.290772
+Took 56.5436022282 seconds
+Iterations: 10 Regularization parameter: 0.01 MSE: 0.108582068109
+Took 58.4725430012 seconds
+Iterations: 10 Regularization parameter: 0.1 MSE: 0.141783879529
+Took 59.2123072147 seconds
+Iterations: 10 Regularization parameter: 1.0 MSE: 1.60257803571
+Took 59.0457808971 seconds
+Iterations: 10 Regularization parameter: 10.0 MSE: 14.290772
+Took 61.1047689915 seconds
+Iterations: 20 Regularization parameter: 0.01 MSE: 0.0711365045207
+Took 68.416105032 seconds
+Iterations: 20 Regularization parameter: 0.1 MSE: 0.134300869852
+Took 68.4511668682 seconds
+Iterations: 20 Regularization parameter: 1.0 MSE: 1.60257720915
+Took 68.5700221062 seconds
+Iterations: 20 Regularization parameter: 10.0 MSE: 14.290772
+Took 67.311070919 seconds

@@ -1,0 +1,3 @@
+pip install pyspark --user
+pip install numpy --user
+module load GATK
