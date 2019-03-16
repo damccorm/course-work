@@ -1,0 +1,12 @@
+To run this project, enter the following commands:
+
+gcc -o gthr gthr.c gtswtch.S
+./gthr
+
+
+If you would like to change the priority of any of the threads,
+just alter it in main, it is the second argument of gtgo.
+
+If you would like to change the scheduling policy,
+alter it in main, it is the first argument of gtgo.
+NOTE: The last policy entered will be the one used.

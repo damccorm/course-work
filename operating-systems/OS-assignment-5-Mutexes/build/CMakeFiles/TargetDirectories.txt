@@ -1,0 +1,2 @@
+/home/vagrant/projects/assignment-5-dannymccormick3/build/CMakeFiles/taskexample.dir
+/home/vagrant/projects/assignment-5-dannymccormick3/build/CMakeFiles/taskhelper.dir

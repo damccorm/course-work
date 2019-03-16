@@ -1,0 +1,1 @@
+/usr/bin/c++    -std=c++0x -g    CMakeFiles/shell.dir/main.cpp.o CMakeFiles/shell.dir/app.cpp.o CMakeFiles/shell.dir/utilities.cpp.o  -o shell -rdynamic 

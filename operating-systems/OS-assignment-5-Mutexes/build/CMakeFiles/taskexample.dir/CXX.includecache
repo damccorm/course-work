@@ -1,0 +1,42 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../client.h
+task.h
+-
+string.h
+-
+container.h
+-
+
+../container.h
+map
+-
+pthread.h
+-
+
+../library/task.h
+pthread.h
+-
+sys/wait.h
+-
+exception
+-
+unistd.h
+-
+thread
+-
+iostream
+-
+string
+-
+
+/home/vagrant/projects/assignment-5-dannymccormick3/client.cpp
+client.h
+-
+

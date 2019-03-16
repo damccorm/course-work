@@ -1,0 +1,2 @@
+/usr/bin/ar cr libtaskhelper.a  CMakeFiles/taskhelper.dir/library/task.cpp.o
+/usr/bin/ranlib libtaskhelper.a

@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../library/task.h
+pthread.h
+-
+sys/wait.h
+-
+exception
+-
+unistd.h
+-
+thread
+-
+iostream
+-
+string
+-
+
+/home/vagrant/projects/assignment-5-dannymccormick3/library/task.cpp
+task.h
+-
+system_error
+-
+iostream
+-
+string.h
+-
+unistd.h
+-
+sys/syscall.h
+-
+stdio.h
+-
+

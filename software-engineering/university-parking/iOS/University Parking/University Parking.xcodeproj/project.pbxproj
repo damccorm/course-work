@@ -1,0 +1,793 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52398C0A1FD079ED008E2EF3 /* Space.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52398C091FD079ED008E2EF3 /* Space.swift */; };
+		52B2BCEB1FD4E6940026DE05 /* VUpark.png in Resources */ = {isa = PBXBuildFile; fileRef = 52B2BCEA1FD4E6940026DE05 /* VUpark.png */; };
+		52B58F271FCFAC1D00F4555B /* Lot.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52B58F261FCFAC1D00F4555B /* Lot.swift */; };
+		52BD6AD31FBD20DF0086B628 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BD6AD21FBD20DF0086B628 /* AppDelegate.swift */; };
+		52BD6AD51FBD20DF0086B628 /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BD6AD41FBD20DF0086B628 /* LoginController.swift */; };
+		52BD6AD81FBD20DF0086B628 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52BD6AD61FBD20DF0086B628 /* Main.storyboard */; };
+		52BD6ADA1FBD20DF0086B628 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 52BD6AD91FBD20DF0086B628 /* Assets.xcassets */; };
+		52BD6ADD1FBD20DF0086B628 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 52BD6ADB1FBD20DF0086B628 /* LaunchScreen.storyboard */; };
+		52BD6AE81FBD20DF0086B628 /* University_ParkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BD6AE71FBD20DF0086B628 /* University_ParkingTests.swift */; };
+		52BD6AF31FBD20DF0086B628 /* University_ParkingUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BD6AF21FBD20DF0086B628 /* University_ParkingUITests.swift */; };
+		52BD6B031FBD241C0086B628 /* ParkControllerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 52BD6B021FBD241C0086B628 /* ParkControllerViewController.swift */; };
+		6755889B776DCAB582FA39CF /* Pods_University_ParkingUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 88F6324AA13115A177946C95 /* Pods_University_ParkingUITests.framework */; };
+		A19FA61BE22F70B6D7D9C462 /* Pods_University_ParkingTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 7450F7F8862BB3C9E61A9DC0 /* Pods_University_ParkingTests.framework */; };
+		BF703B529049D25790CB888D /* Pods_University_Parking.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C2ACB732806EBFDB52B8C02E /* Pods_University_Parking.framework */; };
+		E269288D1FD6E3280061E41F /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = E269288C1FD6E3280061E41F /* GoogleService-Info.plist */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		52BD6AE41FBD20DF0086B628 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52BD6AC71FBD20DE0086B628 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52BD6ACE1FBD20DE0086B628;
+			remoteInfo = "University Parking";
+		};
+		52BD6AEF1FBD20DF0086B628 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 52BD6AC71FBD20DE0086B628 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 52BD6ACE1FBD20DE0086B628;
+			remoteInfo = "University Parking";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1374ABD144EB6D586009E174 /* Pods-University Parking.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-University Parking.debug.xcconfig"; path = "Pods/Target Support Files/Pods-University Parking/Pods-University Parking.debug.xcconfig"; sourceTree = "<group>"; };
+		14D56B472D3F663BFE049E0A /* Pods-University Parking.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-University Parking.release.xcconfig"; path = "Pods/Target Support Files/Pods-University Parking/Pods-University Parking.release.xcconfig"; sourceTree = "<group>"; };
+		52398C091FD079ED008E2EF3 /* Space.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Space.swift; sourceTree = "<group>"; };
+		52B2BCEA1FD4E6940026DE05 /* VUpark.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = VUpark.png; sourceTree = "<group>"; };
+		52B58F261FCFAC1D00F4555B /* Lot.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Lot.swift; sourceTree = "<group>"; };
+		52BD6ACF1FBD20DF0086B628 /* University Parking.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "University Parking.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		52BD6AD21FBD20DF0086B628 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		52BD6AD41FBD20DF0086B628 /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		52BD6AD71FBD20DF0086B628 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		52BD6AD91FBD20DF0086B628 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		52BD6ADC1FBD20DF0086B628 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		52BD6ADE1FBD20DF0086B628 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52BD6AE31FBD20DF0086B628 /* University ParkingTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "University ParkingTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		52BD6AE71FBD20DF0086B628 /* University_ParkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = University_ParkingTests.swift; sourceTree = "<group>"; };
+		52BD6AE91FBD20DF0086B628 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52BD6AEE1FBD20DF0086B628 /* University ParkingUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "University ParkingUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		52BD6AF21FBD20DF0086B628 /* University_ParkingUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = University_ParkingUITests.swift; sourceTree = "<group>"; };
+		52BD6AF41FBD20DF0086B628 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		52BD6B021FBD241C0086B628 /* ParkControllerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParkControllerViewController.swift; sourceTree = "<group>"; };
+		645F27757CCFFD60D5D08F5E /* Pods-University ParkingTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-University ParkingTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-University ParkingTests/Pods-University ParkingTests.release.xcconfig"; sourceTree = "<group>"; };
+		7450F7F8862BB3C9E61A9DC0 /* Pods_University_ParkingTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_University_ParkingTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		88F6324AA13115A177946C95 /* Pods_University_ParkingUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_University_ParkingUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		9480E01E160A50A141E1E32B /* Pods-University ParkingUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-University ParkingUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-University ParkingUITests/Pods-University ParkingUITests.release.xcconfig"; sourceTree = "<group>"; };
+		BC9FAA8A985E6031ACB7E216 /* Pods-University ParkingTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-University ParkingTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-University ParkingTests/Pods-University ParkingTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C2ACB732806EBFDB52B8C02E /* Pods_University_Parking.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_University_Parking.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E269288C1FD6E3280061E41F /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		F16496A2CD4FB38DFE8D8534 /* Pods-University ParkingUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-University ParkingUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-University ParkingUITests/Pods-University ParkingUITests.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		52BD6ACC1FBD20DE0086B628 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				BF703B529049D25790CB888D /* Pods_University_Parking.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52BD6AE01FBD20DF0086B628 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A19FA61BE22F70B6D7D9C462 /* Pods_University_ParkingTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52BD6AEB1FBD20DF0086B628 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				6755889B776DCAB582FA39CF /* Pods_University_ParkingUITests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0281EE816FD371B78303B789 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				C2ACB732806EBFDB52B8C02E /* Pods_University_Parking.framework */,
+				7450F7F8862BB3C9E61A9DC0 /* Pods_University_ParkingTests.framework */,
+				88F6324AA13115A177946C95 /* Pods_University_ParkingUITests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		52BD6AC61FBD20DE0086B628 = {
+			isa = PBXGroup;
+			children = (
+				52BD6AD11FBD20DF0086B628 /* University Parking */,
+				52BD6AE61FBD20DF0086B628 /* University ParkingTests */,
+				52BD6AF11FBD20DF0086B628 /* University ParkingUITests */,
+				52BD6AD01FBD20DF0086B628 /* Products */,
+				E294017E217D7F0BB2B03062 /* Pods */,
+				0281EE816FD371B78303B789 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		52BD6AD01FBD20DF0086B628 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				52BD6ACF1FBD20DF0086B628 /* University Parking.app */,
+				52BD6AE31FBD20DF0086B628 /* University ParkingTests.xctest */,
+				52BD6AEE1FBD20DF0086B628 /* University ParkingUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		52BD6AD11FBD20DF0086B628 /* University Parking */ = {
+			isa = PBXGroup;
+			children = (
+				52B2BCEA1FD4E6940026DE05 /* VUpark.png */,
+				52BD6AD21FBD20DF0086B628 /* AppDelegate.swift */,
+				52BD6AD41FBD20DF0086B628 /* LoginController.swift */,
+				52BD6AD61FBD20DF0086B628 /* Main.storyboard */,
+				52BD6AD91FBD20DF0086B628 /* Assets.xcassets */,
+				52BD6ADB1FBD20DF0086B628 /* LaunchScreen.storyboard */,
+				52BD6ADE1FBD20DF0086B628 /* Info.plist */,
+				52BD6B021FBD241C0086B628 /* ParkControllerViewController.swift */,
+				52B58F261FCFAC1D00F4555B /* Lot.swift */,
+				52398C091FD079ED008E2EF3 /* Space.swift */,
+				E269288C1FD6E3280061E41F /* GoogleService-Info.plist */,
+			);
+			path = "University Parking";
+			sourceTree = "<group>";
+		};
+		52BD6AE61FBD20DF0086B628 /* University ParkingTests */ = {
+			isa = PBXGroup;
+			children = (
+				52BD6AE71FBD20DF0086B628 /* University_ParkingTests.swift */,
+				52BD6AE91FBD20DF0086B628 /* Info.plist */,
+			);
+			path = "University ParkingTests";
+			sourceTree = "<group>";
+		};
+		52BD6AF11FBD20DF0086B628 /* University ParkingUITests */ = {
+			isa = PBXGroup;
+			children = (
+				52BD6AF21FBD20DF0086B628 /* University_ParkingUITests.swift */,
+				52BD6AF41FBD20DF0086B628 /* Info.plist */,
+			);
+			path = "University ParkingUITests";
+			sourceTree = "<group>";
+		};
+		E294017E217D7F0BB2B03062 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1374ABD144EB6D586009E174 /* Pods-University Parking.debug.xcconfig */,
+				14D56B472D3F663BFE049E0A /* Pods-University Parking.release.xcconfig */,
+				BC9FAA8A985E6031ACB7E216 /* Pods-University ParkingTests.debug.xcconfig */,
+				645F27757CCFFD60D5D08F5E /* Pods-University ParkingTests.release.xcconfig */,
+				F16496A2CD4FB38DFE8D8534 /* Pods-University ParkingUITests.debug.xcconfig */,
+				9480E01E160A50A141E1E32B /* Pods-University ParkingUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52BD6ACE1FBD20DE0086B628 /* University Parking */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52BD6AF71FBD20DF0086B628 /* Build configuration list for PBXNativeTarget "University Parking" */;
+			buildPhases = (
+				BBD1E21202B0126CF0184DF6 /* [CP] Check Pods Manifest.lock */,
+				52BD6ACB1FBD20DE0086B628 /* Sources */,
+				52BD6ACC1FBD20DE0086B628 /* Frameworks */,
+				52BD6ACD1FBD20DE0086B628 /* Resources */,
+				E8FCA6BCD84909F1E69C7733 /* [CP] Embed Pods Frameworks */,
+				DD2EB789455C8865759C46BB /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "University Parking";
+			productName = "University Parking";
+			productReference = 52BD6ACF1FBD20DF0086B628 /* University Parking.app */;
+			productType = "com.apple.product-type.application";
+		};
+		52BD6AE21FBD20DF0086B628 /* University ParkingTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52BD6AFA1FBD20DF0086B628 /* Build configuration list for PBXNativeTarget "University ParkingTests" */;
+			buildPhases = (
+				657E9B43CB0B3510464D99B5 /* [CP] Check Pods Manifest.lock */,
+				52BD6ADF1FBD20DF0086B628 /* Sources */,
+				52BD6AE01FBD20DF0086B628 /* Frameworks */,
+				52BD6AE11FBD20DF0086B628 /* Resources */,
+				4DDA910D00F533A7EC62B776 /* [CP] Embed Pods Frameworks */,
+				36697A7528688FE481A217A5 /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52BD6AE51FBD20DF0086B628 /* PBXTargetDependency */,
+			);
+			name = "University ParkingTests";
+			productName = "University ParkingTests";
+			productReference = 52BD6AE31FBD20DF0086B628 /* University ParkingTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		52BD6AED1FBD20DF0086B628 /* University ParkingUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 52BD6AFD1FBD20DF0086B628 /* Build configuration list for PBXNativeTarget "University ParkingUITests" */;
+			buildPhases = (
+				FFA7A232482A0A47327FEB73 /* [CP] Check Pods Manifest.lock */,
+				52BD6AEA1FBD20DF0086B628 /* Sources */,
+				52BD6AEB1FBD20DF0086B628 /* Frameworks */,
+				52BD6AEC1FBD20DF0086B628 /* Resources */,
+				AEB8ACDDFAFD75ECEA56C201 /* [CP] Embed Pods Frameworks */,
+				BE96A302128E26C76B91B4ED /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				52BD6AF01FBD20DF0086B628 /* PBXTargetDependency */,
+			);
+			name = "University ParkingUITests";
+			productName = "University ParkingUITests";
+			productReference = 52BD6AEE1FBD20DF0086B628 /* University ParkingUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		52BD6AC71FBD20DE0086B628 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0910;
+				ORGANIZATIONNAME = PSE;
+				TargetAttributes = {
+					52BD6ACE1FBD20DE0086B628 = {
+						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0910;
+						ProvisioningStyle = Manual;
+					};
+					52BD6AE21FBD20DF0086B628 = {
+						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0910;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 52BD6ACE1FBD20DE0086B628;
+					};
+					52BD6AED1FBD20DF0086B628 = {
+						CreatedOnToolsVersion = 8.3.3;
+						LastSwiftMigration = 0910;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 52BD6ACE1FBD20DE0086B628;
+					};
+				};
+			};
+			buildConfigurationList = 52BD6ACA1FBD20DE0086B628 /* Build configuration list for PBXProject "University Parking" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 52BD6AC61FBD20DE0086B628;
+			productRefGroup = 52BD6AD01FBD20DF0086B628 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52BD6ACE1FBD20DE0086B628 /* University Parking */,
+				52BD6AE21FBD20DF0086B628 /* University ParkingTests */,
+				52BD6AED1FBD20DF0086B628 /* University ParkingUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		52BD6ACD1FBD20DE0086B628 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E269288D1FD6E3280061E41F /* GoogleService-Info.plist in Resources */,
+				52BD6ADD1FBD20DF0086B628 /* LaunchScreen.storyboard in Resources */,
+				52BD6ADA1FBD20DF0086B628 /* Assets.xcassets in Resources */,
+				52B2BCEB1FD4E6940026DE05 /* VUpark.png in Resources */,
+				52BD6AD81FBD20DF0086B628 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52BD6AE11FBD20DF0086B628 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52BD6AEC1FBD20DF0086B628 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		36697A7528688FE481A217A5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-University ParkingTests/Pods-University ParkingTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		4DDA910D00F533A7EC62B776 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-University ParkingTests/Pods-University ParkingTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		657E9B43CB0B3510464D99B5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-University ParkingTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AEB8ACDDFAFD75ECEA56C201 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-University ParkingUITests/Pods-University ParkingUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BBD1E21202B0126CF0184DF6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-University Parking-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BE96A302128E26C76B91B4ED /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-University ParkingUITests/Pods-University ParkingUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DD2EB789455C8865759C46BB /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-University Parking/Pods-University Parking-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E8FCA6BCD84909F1E69C7733 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-University Parking/Pods-University Parking-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleToolboxForMac/GoogleToolboxForMac.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleToolboxForMac.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-University Parking/Pods-University Parking-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FFA7A232482A0A47327FEB73 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-University ParkingUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		52BD6ACB1FBD20DE0086B628 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52BD6AD51FBD20DF0086B628 /* LoginController.swift in Sources */,
+				52BD6B031FBD241C0086B628 /* ParkControllerViewController.swift in Sources */,
+				52398C0A1FD079ED008E2EF3 /* Space.swift in Sources */,
+				52BD6AD31FBD20DF0086B628 /* AppDelegate.swift in Sources */,
+				52B58F271FCFAC1D00F4555B /* Lot.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52BD6ADF1FBD20DF0086B628 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52BD6AE81FBD20DF0086B628 /* University_ParkingTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		52BD6AEA1FBD20DF0086B628 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52BD6AF31FBD20DF0086B628 /* University_ParkingUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		52BD6AE51FBD20DF0086B628 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52BD6ACE1FBD20DE0086B628 /* University Parking */;
+			targetProxy = 52BD6AE41FBD20DF0086B628 /* PBXContainerItemProxy */;
+		};
+		52BD6AF01FBD20DF0086B628 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 52BD6ACE1FBD20DE0086B628 /* University Parking */;
+			targetProxy = 52BD6AEF1FBD20DF0086B628 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		52BD6AD61FBD20DF0086B628 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52BD6AD71FBD20DF0086B628 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		52BD6ADB1FBD20DF0086B628 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				52BD6ADC1FBD20DF0086B628 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		52BD6AF51FBD20DF0086B628 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		52BD6AF61FBD20DF0086B628 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		52BD6AF81FBD20DF0086B628 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1374ABD144EB6D586009E174 /* Pods-University Parking.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "University Parking/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "CS4278.University-Parking";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		52BD6AF91FBD20DF0086B628 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14D56B472D3F663BFE049E0A /* Pods-University Parking.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				INFOPLIST_FILE = "University Parking/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "CS4278.University-Parking";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+		52BD6AFB1FBD20DF0086B628 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BC9FAA8A985E6031ACB7E216 /* Pods-University ParkingTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "University ParkingTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "CS4278.University-ParkingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/University Parking.app/University Parking";
+			};
+			name = Debug;
+		};
+		52BD6AFC1FBD20DF0086B628 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 645F27757CCFFD60D5D08F5E /* Pods-University ParkingTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "University ParkingTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "CS4278.University-ParkingTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/University Parking.app/University Parking";
+			};
+			name = Release;
+		};
+		52BD6AFE1FBD20DF0086B628 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = F16496A2CD4FB38DFE8D8534 /* Pods-University ParkingUITests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "University ParkingUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "CS4278.University-ParkingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = "University Parking";
+			};
+			name = Debug;
+		};
+		52BD6AFF1FBD20DF0086B628 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9480E01E160A50A141E1E32B /* Pods-University ParkingUITests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "University ParkingUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "CS4278.University-ParkingUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+				TEST_TARGET_NAME = "University Parking";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		52BD6ACA1FBD20DE0086B628 /* Build configuration list for PBXProject "University Parking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52BD6AF51FBD20DF0086B628 /* Debug */,
+				52BD6AF61FBD20DF0086B628 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52BD6AF71FBD20DF0086B628 /* Build configuration list for PBXNativeTarget "University Parking" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52BD6AF81FBD20DF0086B628 /* Debug */,
+				52BD6AF91FBD20DF0086B628 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52BD6AFA1FBD20DF0086B628 /* Build configuration list for PBXNativeTarget "University ParkingTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52BD6AFB1FBD20DF0086B628 /* Debug */,
+				52BD6AFC1FBD20DF0086B628 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		52BD6AFD1FBD20DF0086B628 /* Build configuration list for PBXNativeTarget "University ParkingUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				52BD6AFE1FBD20DF0086B628 /* Debug */,
+				52BD6AFF1FBD20DF0086B628 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 52BD6AC71FBD20DE0086B628 /* Project object */;
+}

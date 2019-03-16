@@ -1,0 +1,62 @@
+{
+  "project_info": {
+    "project_number": "446787361237",
+    "firebase_url": "https://parking-app-eae9a.firebaseio.com",
+    "project_id": "parking-app-eae9a",
+    "storage_bucket": "parking-app-eae9a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:446787361237:android:70f91e69ec3d19c0",
+        "android_client_info": {
+          "package_name": "cs4278.vupark"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "446787361237-38vgrdvvp5pjng9bfetr0fi0d2m4ujd5.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "cs4278.vupark",
+            "certificate_hash": "f4083ac410ad355d5fb1f49164469a0cc1e4226c"
+          }
+        },
+        {
+          "client_id": "446787361237-8h7vlluvlf7un9upamgamsa46ksuq0kb.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAYAc1xR799GVG2R6mvP-KMK2b9QN2S5bY"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "446787361237-8h7vlluvlf7un9upamgamsa46ksuq0kb.apps.googleusercontent.com",
+              "client_type": 3
+            },
+            {
+              "client_id": "446787361237-qcb55onc5nsvm7ts8pb878a4p05ur03a.apps.googleusercontent.com",
+              "client_type": 2,
+              "ios_info": {
+                "bundle_id": "CS4278.University-Parking"
+              }
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,414 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context="cs4278.vupark.LoginActivity">
+
+    <android.support.v7.widget.Toolbar
+
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:background="@color/colorPrimary"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="@color/colorAccent"
+            android:textSize="10pt"
+            android:textStyle="bold"
+            />
+        
+    </android.support.v7.widget.Toolbar>
+
+    <android.support.v7.widget.Toolbar
+        style="?android:attr/buttonBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7"
+        android:background="@color/white"
+        app:contentInsetLeft="0dp"
+        app:contentInsetStart="0dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/park_button"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="start"
+                android:text="@string/park_button_text" />
+
+            <Button
+                android:id="@+id/lots_button"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_gravity="start"
+                android:layout_toEndOf="@+id/park_button"
+                android:text="@string/lots_button_text" />
+
+            <Button
+                android:id="@+id/account_button"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_toEndOf="@+id/lots_button"
+                android:text="@string/account_button_text" />
+
+            <Space
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/account_button"/>
+
+            <ImageButton
+                android:id="@+id/help_button"
+                android:contentDescription="@string/help_text"
+                style="?android:attr/buttonBarButtonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentEnd="true"
+                android:src="@drawable/ic_help_outline_black_24dp" />
+
+        </RelativeLayout>
+
+    </android.support.v7.widget.Toolbar>
+
+    <fragment xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:map="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/map"
+        android:name="com.google.android.gms.maps.SupportMapFragment"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="43"
+        tools:context="cs4278.vupark.MapsActivity"/>
+
+    <ViewAnimator
+        android:id="@+id/animator"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="43">
+
+        <!--index 0-->
+        <android.widget.TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/pick_lot_text"/>
+
+        <!--index 1-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/lot_name"
+                android:paddingTop="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/colorAccent"
+                android:textSize="12pt"
+                android:textStyle="bold" />
+
+            <android.support.v7.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center">
+
+                <Button
+                    android:id="@+id/reserve_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/pastel_green"
+                    android:text="@string/reserve_button_text" />
+
+                <Button
+                    android:id="@+id/register_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:backgroundTint="@color/pastel_green"
+                    android:text="@string/register_button_text"/>
+
+            </android.support.v7.widget.Toolbar>
+
+            <ListView
+                android:id="@+id/lot_list"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:choiceMode="singleChoice"
+                android:listSelector="@color/gray">
+            </ListView>
+
+        </LinearLayout>
+
+        <!--index 2-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/reserve_header"
+                android:layout_alignParentTop="true"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/colorAccent"
+                android:text="@string/confirmation_text"
+                android:textSize="10pt"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/reserve_lot_name"
+                android:layout_below="@+id/reserve_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lot_text"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="8pt"/>
+
+                <TextView
+                    android:id="@+id/lot_name_entry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="8pt"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/reserve_spot_name"
+                android:layout_below="@+id/reserve_lot_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/spot_text"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="8pt"/>
+
+                <TextView
+                    android:id="@+id/spot_entry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="8pt"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/reserve_cost"
+                android:layout_below="@+id/reserve_spot_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cost_text"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="8pt"/>
+
+                <TextView
+                    android:id="@+id/cost_entry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="8pt"/>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/reserve_cost"
+                android:layout_above="@+id/reserve_view_buttons"/>
+
+            <LinearLayout
+                android:id="@+id/reserve_view_buttons"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_alignParentBottom="true">
+
+                <Button
+                    android:id="@+id/park_car_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/park_car_button_text"
+                    android:backgroundTint="@color/pastel_green"
+                    android:textSize="8pt"/>
+
+                <Button
+                    android:id="@+id/cancel_reservation_button"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cancel_reservation_button_text"
+                    android:backgroundTint="@color/pastel_red"
+                    android:textSize="8pt"/>
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <!--index 3-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/confirmation_header"
+                android:layout_alignParentTop="true"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:textColor="@color/colorAccent"
+                android:text="@string/park_confirmation_text"
+                android:textSize="10pt"
+                android:textStyle="bold" />
+
+            <LinearLayout
+                android:id="@+id/confirmation_lot_name"
+                android:layout_below="@+id/confirmation_header"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/lot_text"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="8pt"/>
+
+                <TextView
+                    android:id="@+id/confirmation_lot_name_entry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="8pt"/>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/confirmation_spot_name"
+                android:layout_below="@+id/confirmation_lot_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/spot_text"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="8pt"/>
+
+                <TextView
+                    android:id="@+id/confirmation_spot_entry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="8pt"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/confirmation_cost"
+                android:layout_below="@+id/confirmation_spot_name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingBottom="8dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cost_text"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="8pt"/>
+
+                <TextView
+                    android:id="@+id/confirmation_cost_entry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/colorAccent"
+                    android:textSize="8pt"/>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/confirmation_cost"
+                android:layout_above="@+id/leave_spot_button"/>
+
+            <Button
+                android:id="@+id/leave_spot_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:text="@string/leave_spot_button_text"
+                android:backgroundTint="@color/pastel_red"
+                android:textSize="8pt"/>
+
+        </RelativeLayout>
+
+
+    </ViewAnimator>
+
+</LinearLayout>

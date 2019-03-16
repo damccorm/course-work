@@ -1,0 +1,1 @@
+/usr/bin/c++       CMakeFiles/mqueue_s.dir/mqueue_s.cpp.o  -o mqueue_s -rdynamic -lrt 

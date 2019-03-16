@@ -1,0 +1,3 @@
+/home/vagrant/projects/assignment-6-dannymccormick3/part2/build/CMakeFiles/mqueue_l.dir
+/home/vagrant/projects/assignment-6-dannymccormick3/part2/build/CMakeFiles/mqueue_r.dir
+/home/vagrant/projects/assignment-6-dannymccormick3/part2/build/CMakeFiles/mqueue_s.dir

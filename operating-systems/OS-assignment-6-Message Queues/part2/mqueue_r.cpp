@@ -1,0 +1,91 @@
+// This file receives numbers from a message queue connected to mqueue_s.
+// If they are prime, sends them to mqueue_l by message queue
+#include <fcntl.h>    /* For O_* constants */
+#include <sys/stat.h> /* For mode constants */
+#include <mqueue.h>
+#include <stdio.h>
+#include <errno.h>
+#include <stdlib.h>
+#include <iostream>
+
+// Function to determine if number is prime
+bool prime(int data);
+
+int main(int argc, char **argv) {
+  // struct that contains all the flags/attributes of the message queue
+  struct mq_attr config;
+  config.mq_flags = 0;
+  config.mq_maxmsg = 3;
+  config.mq_msgsize = 5;
+  config.mq_curmsgs = 0;
+
+  // Open message queue to receive messages from mqueue_s. If necessary, create
+  // it
+  mqd_t mq = mq_open("/MyCoolMQ", O_RDONLY | O_CREAT,
+                     S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH, &config);
+
+  // Open second message queue to talk to mqueue_l. If necessary, create it
+  mqd_t mq2 = mq_open("/MyCoolMQ2", O_WRONLY | O_CREAT,
+                      S_IRUSR | S_IWUSR | S_IRGRP | S_IROTH, &config);
+
+  // If either message queue failed to open, print error message, exit
+  if (mq == -1) {
+    perror("mq_open");
+    return -1;
+  }
+  if (mq2 == -1) {
+    perror("mq2_open");
+    return -1;
+  }
+
+  // Loop until error or prio = 24
+  for (;;) {
+    // Receive message from message queue. Store value in data, priority in prio
+    // and return value(Success/Failure) in received
+    unsigned int prio = 0;
+    int data = 0;
+    ssize_t received =
+        mq_receive(mq, (char *)&data, sizeof((char *)&data), &prio);
+
+    // If mq_receive failed, print error, exit
+    if (received == -1) {
+      perror("mq_receive");
+      return -1;
+    }
+
+    // If data is prime send to logger by message queue
+    if (prime(data)) {
+      std::cerr << "Sending message to logger " << data << std::endl;
+      mq_send(mq2, (char *)&data, sizeof(data), data);
+    }
+    if (prio == 24)
+      break;
+  }
+  // Close and unlink message queues so that other files can
+  // see that we are done with them
+  mq_close(mq);
+  mq_close(mq2);
+  mq_unlink("/MyCoolMQ");
+  mq_unlink("/MyCoolMQ2");
+}
+
+// Function that returns true if data is prime
+// Tests edge conditions, then checks if it is divisible
+// by 2 or any odd numbers less than half of it
+bool prime(int data) {
+  if (data < 2) {
+    return false;
+  }
+  if (data == 2) {
+    return true;
+  }
+  if ((data % 2) == 0) {
+    return false;
+  }
+  for (int i = 3; i <= (data / 2); i += 2) {
+    if ((data % i) == 0) {
+      return false;
+    }
+  }
+  return true;
+}

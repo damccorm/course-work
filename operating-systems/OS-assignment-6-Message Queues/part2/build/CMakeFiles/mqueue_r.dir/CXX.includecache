@@ -1,0 +1,24 @@
+#IncludeRegexLine: ^[ 	]*#[ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/vagrant/projects/assignment-6-dannymccormick3/part2/mqueue_r.cpp
+fcntl.h
+-
+sys/stat.h
+-
+mqueue.h
+-
+stdio.h
+-
+errno.h
+-
+stdlib.h
+-
+iostream
+-
+

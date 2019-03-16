@@ -1,0 +1,30 @@
+<resources>
+
+    <string name="app_name">VUpark</string>
+    <string name="username_text">Username:</string>
+    <string name="username_hint">Type your username</string>
+    <string name="password_text">Password:</string>
+    <string name="password_hint">Type your password</string>
+    <string name="login_text">Login</string>
+    <string name="title_activity_maps">Map</string>
+
+    <string name="park_button_text">Park</string>
+    <string name="lots_button_text">Parking Lots</string>
+    <string name="account_button_text">Account</string>
+    <string name="help_text">VU Parking Contact Info.</string>
+
+    <string name="pick_lot_text">Click on a parking lot in the map above.</string>
+    <string name="reserve_button_text">Reserve Spot</string>
+    <string name="register_button_text">Mark You\'ve Parked</string>
+
+    <string name="confirmation_text">You Have A Spot Reserved</string>
+    <string name="lot_text">Lot\/Garage: \ \ </string>
+    <string name="spot_text">Spot:\ \ </string>
+    <string name="cost_text">Cost:\ \ </string>
+    <string name="park_car_button_text">Park My Car</string>
+    <string name="cancel_reservation_button_text">Cancel Reservation</string>
+
+    <string name="park_confirmation_text">Your Car Is Parked</string>
+    <string name="leave_spot_button_text">Leave Parking Spot</string>
+
+</resources>

@@ -1,0 +1,4 @@
+To run this project, enter the following commands:
+gcc -o gthr gthr.c gtswtch.S
+./gthr
+
