@@ -1,0 +1,15 @@
+Test description: Designed to test whether system accurately maintains history of publishers.
+
+1) Start up 3 terminals
+2) In the first, run python eb.py and wait a few seconds
+3) In the second, run pub1.py
+4) Wait until publisher.py finishes plus a few seconds to allow the event_broker to process
+5) In the third, run sub1.py
+
+Expected output:
+topic1 HISTORY: test1-2
+topic1 HISTORY: test1-3
+topic2 HISTORY: test2-2
+topic2 HISTORY: test2-3
+
+NOTE: messages may be out of order, that's ok.
