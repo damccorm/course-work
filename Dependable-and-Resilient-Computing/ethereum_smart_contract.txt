@@ -1,0 +1,12 @@
+pragma solidity ^0.4.8;
+contract Fibonnaci {
+    uint storedData1 = 1;
+    uint storedData2 = 1;
+    function set() public {
+        storedData1 = storedData1 + storedData2;
+        storedData2 = storedData1 - storedData2;
+    }
+    function get() public constant returns (uint retVal) {
+        return storedData1;
+    }
+}
